@@ -36,6 +36,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25E8A2FD29A58F9800F68C9D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A2FF29A58FB700F68C9D /* People */,
+				25E8A30029A58FC900F68C9D /* Detail */,
+				25E8A30129A58FD300F68C9D /* Create */,
+				25E8A30229A58FDA00F68C9D /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		25E8A2FE29A58FA100F68C9D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A30D29A5904D00F68C9D /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		25E8A2FF29A58FB700F68C9D /* People */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A30529A5900100F68C9D /* Views */,
+				25E8A30429A58FFA00F68C9D /* Model */,
+				25E8A30329A58FF200F68C9D /* ViewModel */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		25E8A30029A58FC900F68C9D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A30829A5901A00F68C9D /* Views */,
+				25E8A30729A5901100F68C9D /* Model */,
+				25E8A30629A5900900F68C9D /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		25E8A30129A58FD300F68C9D /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A30B29A5903F00F68C9D /* Views */,
+				25E8A30A29A5903700F68C9D /* Model */,
+				25E8A30929A5902100F68C9D /* ViewModel */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		25E8A30229A58FDA00F68C9D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				25E8A30C29A5904600F68C9D /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		25E8A30329A58FF200F68C9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25E8A30429A58FFA00F68C9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25E8A30529A5900100F68C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25E8A30629A5900900F68C9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25E8A30729A5901100F68C9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25E8A30829A5901A00F68C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25E8A30929A5902100F68C9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25E8A30A29A5903700F68C9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25E8A30B29A5903F00F68C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25E8A30C29A5904600F68C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25E8A30D29A5904D00F68C9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		25FD92AA29A5894800E5DBD6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +189,11 @@
 		25FD92B529A5894800E5DBD6 /* TakeHome-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				25E8A2FD29A58F9800F68C9D /* Features */,
+				25E8A2FE29A58FA100F68C9D /* Base */,
+				25FD92C629A589ED00E5DBD6 /* Resources */,
 				25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */,
 				25FD92B829A5894800E5DBD6 /* ContentView.swift */,
-				25FD92C629A589ED00E5DBD6 /* Resources */,
 				25FD92BA29A5894900E5DBD6 /* Assets.xcassets */,
 				25FD92BC29A5894900E5DBD6 /* Preview Content */,
 			);
