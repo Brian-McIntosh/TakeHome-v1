@@ -13,9 +13,8 @@
 		257393B029A6302400261EE4 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AF29A6302400261EE4 /* UsersResponse.swift */; };
 		257393B329A6321E00261EE4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B229A6321E00261EE4 /* Models.swift */; };
 		257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B529A6331200261EE4 /* StaticJSONMapper.swift */; };
-		25E8A30F29A5918000F68C9D /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8A30E29A5918000F68C9D /* temp.swift */; };
+		25F1A95129A6902C00A648CD /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A95029A6902C00A648CD /* PeopleView.swift */; };
 		25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */; };
-		25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B829A5894800E5DBD6 /* ContentView.swift */; };
 		25FD92BB29A5894900E5DBD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FD92BA29A5894900E5DBD6 /* Assets.xcassets */; };
 		25FD92BE29A5894900E5DBD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FD92BD29A5894900E5DBD6 /* Preview Assets.xcassets */; };
 		25FD92C529A5895B00E5DBD6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92C429A5895B00E5DBD6 /* Symbols.swift */; };
@@ -29,10 +28,9 @@
 		257393AF29A6302400261EE4 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersResponse.swift; path = "TakeHome-v1/Resources/JSON/UsersResponse.swift"; sourceTree = SOURCE_ROOT; };
 		257393B229A6321E00261EE4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		257393B529A6331200261EE4 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
-		25E8A30E29A5918000F68C9D /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+		25F1A95029A6902C00A648CD /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		25FD92B329A5894800E5DBD6 /* TakeHome-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TakeHome-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHome_v1App.swift; sourceTree = "<group>"; };
-		25FD92B829A5894800E5DBD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25FD92BA29A5894900E5DBD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25FD92BD29A5894900E5DBD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25FD92C429A5895B00E5DBD6 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
@@ -152,7 +150,7 @@
 		25E8A30529A5900100F68C9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25E8A30E29A5918000F68C9D /* temp.swift */,
+				25F1A95029A6902C00A648CD /* PeopleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,7 +235,6 @@
 				25E8A2FE29A58FA100F68C9D /* Base */,
 				25FD92C629A589ED00E5DBD6 /* Resources */,
 				25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */,
-				25FD92B829A5894800E5DBD6 /* ContentView.swift */,
 				25FD92BA29A5894900E5DBD6 /* Assets.xcassets */,
 				25FD92BC29A5894900E5DBD6 /* Preview Content */,
 			);
@@ -336,13 +333,12 @@
 			files = (
 				25FD92C529A5895B00E5DBD6 /* Symbols.swift in Sources */,
 				25FD92C829A58A0700E5DBD6 /* Theme.swift in Sources */,
+				25F1A95129A6902C00A648CD /* PeopleView.swift in Sources */,
 				257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */,
-				25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */,
 				257393B329A6321E00261EE4 /* Models.swift in Sources */,
 				25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */,
 				257393B029A6302400261EE4 /* UsersResponse.swift in Sources */,
 				257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */,
-				25E8A30F29A5918000F68C9D /* temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
