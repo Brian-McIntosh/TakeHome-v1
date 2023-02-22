@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257393AA29A629FD00261EE4 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393A929A629FD00261EE4 /* UsersStaticData.json */; };
+		257393AC29A62B0000261EE4 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393AB29A62B0000261EE4 /* SingleUserData.json */; };
+		257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AD29A62E6600261EE4 /* UserDetailResponse.swift */; };
 		25E8A30F29A5918000F68C9D /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8A30E29A5918000F68C9D /* temp.swift */; };
 		25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */; };
 		25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B829A5894800E5DBD6 /* ContentView.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		257393A929A629FD00261EE4 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
+		257393AB29A62B0000261EE4 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
+		257393AD29A62E6600261EE4 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailResponse.swift; path = "TakeHome-v1/Resources/JSON/UserDetailResponse.swift"; sourceTree = SOURCE_ROOT; };
 		25E8A30E29A5918000F68C9D /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		25FD92B329A5894800E5DBD6 /* TakeHome-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TakeHome-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHome_v1App.swift; sourceTree = "<group>"; };
@@ -38,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257393A829A6298700261EE4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				257393A929A629FD00261EE4 /* UsersStaticData.json */,
+				257393AB29A62B0000261EE4 /* SingleUserData.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		25E8A2FD29A58F9800F68C9D /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +142,7 @@
 		25E8A30729A5901100F68C9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				257393AD29A62E6600261EE4 /* UserDetailResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +230,7 @@
 		25FD92C629A589ED00E5DBD6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				257393A829A6298700261EE4 /* JSON */,
 				25FD92C429A5895B00E5DBD6 /* Symbols.swift */,
 				25FD92C729A58A0700E5DBD6 /* Theme.swift */,
 			);
@@ -280,6 +297,8 @@
 			files = (
 				25FD92BE29A5894900E5DBD6 /* Preview Assets.xcassets in Resources */,
 				25FD92BB29A5894900E5DBD6 /* Assets.xcassets in Resources */,
+				257393AC29A62B0000261EE4 /* SingleUserData.json in Resources */,
+				257393AA29A629FD00261EE4 /* UsersStaticData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +313,7 @@
 				25FD92C829A58A0700E5DBD6 /* Theme.swift in Sources */,
 				25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */,
 				25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */,
+				257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */,
 				25E8A30F29A5918000F68C9D /* temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
