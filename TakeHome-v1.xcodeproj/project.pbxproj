@@ -10,6 +10,9 @@
 		257393AA29A629FD00261EE4 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393A929A629FD00261EE4 /* UsersStaticData.json */; };
 		257393AC29A62B0000261EE4 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393AB29A62B0000261EE4 /* SingleUserData.json */; };
 		257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AD29A62E6600261EE4 /* UserDetailResponse.swift */; };
+		257393B029A6302400261EE4 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AF29A6302400261EE4 /* UsersResponse.swift */; };
+		257393B329A6321E00261EE4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B229A6321E00261EE4 /* Models.swift */; };
+		257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B529A6331200261EE4 /* StaticJSONMapper.swift */; };
 		25E8A30F29A5918000F68C9D /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8A30E29A5918000F68C9D /* temp.swift */; };
 		25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */; };
 		25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD92B829A5894800E5DBD6 /* ContentView.swift */; };
@@ -23,6 +26,9 @@
 		257393A929A629FD00261EE4 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
 		257393AB29A62B0000261EE4 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		257393AD29A62E6600261EE4 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailResponse.swift; path = "TakeHome-v1/Resources/JSON/UserDetailResponse.swift"; sourceTree = SOURCE_ROOT; };
+		257393AF29A6302400261EE4 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersResponse.swift; path = "TakeHome-v1/Resources/JSON/UsersResponse.swift"; sourceTree = SOURCE_ROOT; };
+		257393B229A6321E00261EE4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		257393B529A6331200261EE4 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
 		25E8A30E29A5918000F68C9D /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		25FD92B329A5894800E5DBD6 /* TakeHome-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TakeHome-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FD92B629A5894800E5DBD6 /* TakeHome_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHome_v1App.swift; sourceTree = "<group>"; };
@@ -53,12 +59,28 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		257393B129A6321300261EE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				257393B229A6321E00261EE4 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		257393B429A6330000261EE4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				257393B529A6331200261EE4 /* StaticJSONMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		25E8A2FD29A58F9800F68C9D /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				25E8A2FF29A58FB700F68C9D /* People */,
 				25E8A30029A58FC900F68C9D /* Detail */,
 				25E8A30129A58FD300F68C9D /* Create */,
+				25E8A2FF29A58FB700F68C9D /* People */,
 				25E8A30229A58FDA00F68C9D /* Settings */,
 			);
 			path = Features;
@@ -67,6 +89,8 @@
 		25E8A2FE29A58FA100F68C9D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				257393B429A6330000261EE4 /* Mapper */,
+				257393B129A6321300261EE4 /* Models */,
 				25E8A30D29A5904D00F68C9D /* Views */,
 			);
 			path = Base;
@@ -120,6 +144,7 @@
 		25E8A30429A58FFA00F68C9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				257393AF29A6302400261EE4 /* UsersResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,8 +336,11 @@
 			files = (
 				25FD92C529A5895B00E5DBD6 /* Symbols.swift in Sources */,
 				25FD92C829A58A0700E5DBD6 /* Theme.swift in Sources */,
+				257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */,
 				25FD92B929A5894800E5DBD6 /* ContentView.swift in Sources */,
+				257393B329A6321E00261EE4 /* Models.swift in Sources */,
 				25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */,
+				257393B029A6302400261EE4 /* UsersResponse.swift in Sources */,
 				257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */,
 				25E8A30F29A5918000F68C9D /* temp.swift in Sources */,
 			);

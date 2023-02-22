@@ -14,6 +14,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .padding()
+                .onAppear {
+                    
+                    print("Users Response")
+                    dump(
+                        try? StaticJSONMapper.decode(file: "UsersStaticData", type: UsersResponse.self)
+                    )
+                }
         }
         .padding()
     }
