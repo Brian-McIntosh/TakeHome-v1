@@ -9,6 +9,9 @@ import SwiftUI
 
 struct PeopleView: View {
     
+    @State private var users: [User] = [] //this is what our view will observe
+    @State private var shouldShowCreate = false
+    
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
@@ -23,13 +26,16 @@ struct PeopleView: View {
                     LazyVGrid(columns: columns,
                               spacing: 16) {
                         
-                        ForEach(0...5, id: \.self) { item in
+                        // Original ForEach for testing
+                        //ForEach(0...5, id: \.self) { item in
+                        
+                        ForEach(users, id: \.id) { user in
                             
                             //Text("\(item): Hello, World!")
                             //the point where we extracted our repeating VStack
                             //replace w/ extracted component
                             
-                            PersonItemView(user: item)
+                            PersonItemView(user: user)
                         }
                     }
                     .padding()
@@ -47,13 +53,27 @@ struct PeopleView: View {
 //                            )
 //                    }
                 }
-                
             }
             .navigationTitle("People")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     create
                 }
+            }
+            // get users
+            .onAppear {
+                // write the logic to get the dummy data
+                do {
+                    // we wrote a function that will throw an error
+                    let res = try StaticJSONMapper.decode(file: "UsersStaticData", type: UsersResponse.self)
+                    
+                    users = res.data // so now we're storing this...
+                }catch{
+                    print("Error getting local file from FileManager or Error converting local file into data")
+                }
+            }
+            .sheet(isPresented: $shouldShowCreate) {
+                CreateView()
             }
         }
     }
@@ -78,6 +98,7 @@ private extension PeopleView {
         // move toolbar code here...
         Button {
             print("button extension")
+            shouldShowCreate.toggle()
         } label: {
             Symbols.plus
                 .font(

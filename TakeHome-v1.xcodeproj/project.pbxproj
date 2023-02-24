@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25381A7A29A7BE210099789E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25381A7929A7BE210099789E /* DetailView.swift */; };
 		257393AA29A629FD00261EE4 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393A929A629FD00261EE4 /* UsersStaticData.json */; };
 		257393AC29A62B0000261EE4 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 257393AB29A62B0000261EE4 /* SingleUserData.json */; };
 		257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AD29A62E6600261EE4 /* UserDetailResponse.swift */; };
 		257393B029A6302400261EE4 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393AF29A6302400261EE4 /* UsersResponse.swift */; };
 		257393B329A6321E00261EE4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B229A6321E00261EE4 /* Models.swift */; };
 		257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257393B529A6331200261EE4 /* StaticJSONMapper.swift */; };
+		25B76CB829A836C8000E7D66 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B76CB729A836C8000E7D66 /* CreateView.swift */; };
 		25E84FB329A78D05001C5F0B /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E84FB229A78D05001C5F0B /* PersonItemView.swift */; };
 		25E84FB529A78F6A001C5F0B /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E84FB429A78F6A001C5F0B /* PillView.swift */; };
 		25F1A95129A6902C00A648CD /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1A95029A6902C00A648CD /* PeopleView.swift */; };
@@ -24,12 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25381A7929A7BE210099789E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		257393A929A629FD00261EE4 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
 		257393AB29A62B0000261EE4 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		257393AD29A62E6600261EE4 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailResponse.swift; path = "TakeHome-v1/Resources/JSON/UserDetailResponse.swift"; sourceTree = SOURCE_ROOT; };
 		257393AF29A6302400261EE4 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersResponse.swift; path = "TakeHome-v1/Resources/JSON/UsersResponse.swift"; sourceTree = SOURCE_ROOT; };
 		257393B229A6321E00261EE4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		257393B529A6331200261EE4 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		25B76CB729A836C8000E7D66 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		25E84FB229A78D05001C5F0B /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 		25E84FB429A78F6A001C5F0B /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		25F1A95029A6902C00A648CD /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 		25E8A30829A5901A00F68C9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				25381A7929A7BE210099789E /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		25E8A30B29A5903F00F68C9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				25B76CB729A836C8000E7D66 /* CreateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,10 +348,12 @@
 				25FD92C829A58A0700E5DBD6 /* Theme.swift in Sources */,
 				25F1A95129A6902C00A648CD /* PeopleView.swift in Sources */,
 				257393B629A6331200261EE4 /* StaticJSONMapper.swift in Sources */,
+				25381A7A29A7BE210099789E /* DetailView.swift in Sources */,
 				257393B329A6321E00261EE4 /* Models.swift in Sources */,
 				25FD92B729A5894800E5DBD6 /* TakeHome_v1App.swift in Sources */,
 				257393B029A6302400261EE4 /* UsersResponse.swift in Sources */,
 				25E84FB329A78D05001C5F0B /* PersonItemView.swift in Sources */,
+				25B76CB829A836C8000E7D66 /* CreateView.swift in Sources */,
 				257393AE29A62E6600261EE4 /* UserDetailResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
